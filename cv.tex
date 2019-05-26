@@ -1,0 +1,30 @@
+\documentclass[margin]{res}
+\usepackage{helvet}
+\usepackage[utf8]{inputenc}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[unicode=true,
+					colorlinks=true,
+					linkcolor=blue]{hyperref}
+\hypersetup{urlcolor=BlueViolet} % Does not apply color to href's
+\hypersetup{colorlinks,urlcolor=BlueViolet} % href's are correct, but navigation
+\setlength{\textwidth}{5.1in} % Text width of the document
+
+\begin{document}
+	
+	\moveleft.5\hoffset\centerline{\large\bf Lucas Nogueira Ribeiro}
+	\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+	\moveleft.5\hoffset\centerline{Curriculum Vitae}
+	\moveleft.5\hoffset\centerline{May 25th, 2019}
+	
+	\begin{resume}
+		\input{./section/contact.tex} \vspace{0.4cm}
+		\input{./section/education.tex} \vspace{0.4cm}
+		\input{./section/experience.tex} \vspace{0.4cm}
+		\input{./section/qualifications.tex} \vspace{0.4cm}
+		\input{./section/teaching.tex} \vspace{0.4cm}
+		\input{./section/awards.tex} \vspace{0.4cm}
+		\input{./section/service.tex} \vspace{0.4cm}
+		\input{./section/publications.tex}
+	\end{resume}
+
+\end{document}
