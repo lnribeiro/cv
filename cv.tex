@@ -2,19 +2,17 @@
 \usepackage{helvet}
 \usepackage[utf8]{inputenc}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[unicode=true,
-					colorlinks=true,
-					linkcolor=blue]{hyperref}
-\hypersetup{urlcolor=BlueViolet} % Does not apply color to href's
-\hypersetup{colorlinks,urlcolor=BlueViolet} % href's are correct, but navigation
-\setlength{\textwidth}{5.1in} % Text width of the document
+\usepackage[unicode=true, colorlinks=true, linkcolor=blue]{hyperref}
+
+\hypersetup{colorlinks,urlcolor=BlueViolet}
+\setlength{\textwidth}{5in}
 
 \begin{document}
 	
 	\moveleft.5\hoffset\centerline{\large\bf Lucas Nogueira Ribeiro}
 	\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
 	\moveleft.5\hoffset\centerline{Curriculum Vitae}
-	\moveleft.5\hoffset\centerline{May 25th, 2019}
+	\moveleft.5\hoffset\centerline{\today}
 	
 	\begin{resume}
 		\input{./section/contact.tex} \vspace{0.4cm}
