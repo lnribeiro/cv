@@ -3,27 +3,34 @@
 \usepackage[utf8]{inputenc}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[unicode=true, colorlinks=true, linkcolor=blue]{hyperref}
+\usepackage{graphicx,xcolor,fontawesome}
 
 \hypersetup{colorlinks,urlcolor=BlueViolet}
 \setlength{\textwidth}{5in}
+\renewcommand{\sectionfont}{\scshape}
 
 \begin{document}
 
 	\moveleft.5\hoffset\centerline{\Large\bf Lucas Nogueira Ribeiro}
 	\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
-	\moveleft.5\hoffset\centerline{Curriculum Vitae}
-	\moveleft.5\hoffset\centerline{\today}
-	
+
 	\begin{resume}
-		\input{./section/contact.tex} \vspace{0.4cm}
+		% personal.tex should be listed in .gitignore
+		\IfFileExists{./section/personal.tex}{
+			\vspace{-20pt}
+			\input{./section/personal.tex} \vspace{0.4cm}
+		}{}
+		\input{./section/summary.tex} \vspace{0.4cm}
+		\input{./section/interests.tex} \vspace{0.4cm}
 		\input{./section/education.tex} \vspace{0.4cm}
 		\input{./section/experience.tex} \vspace{0.4cm}
-		\input{./section/qualifications.tex} \vspace{0.4cm}
+		\input{./section/skills.tex} \vspace{0.4cm}
 		\input{./section/teaching.tex} \vspace{0.4cm}
 		\input{./section/presentations.tex} \vspace{0.4cm}
 		\input{./section/awards.tex} \vspace{0.4cm}
 		\input{./section/service.tex} \vspace{0.4cm}
-		\input{./section/publications.tex}
+		\input{./section/publications.tex} \vspace{0.4cm}
+		\input{./section/references.tex}
 	\end{resume}
 
 \end{document}
